@@ -3,7 +3,7 @@ awesome-java
 
 A curated list of awesome Java frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python).
 
-## Setup
+## Setup(Macの場合)
 
     $ brew tap caskroom/cask
     $ brew install brew-cask
