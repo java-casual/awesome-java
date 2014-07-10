@@ -48,7 +48,17 @@ MySQL Connector/J にせよ H2 にせよ、実は Driver 本体にロギング�
 
 H2 については、[Trace Options](http://www.h2database.com/html/features.html#trace_options) を見れば良い。
 
+    jdbc:h2:mem:test;TRACE_LEVEL_FIlE=4;TRACE_LEVEL_SYSTEM_OUT=3
+
+とかすれば、いい感じにログがでる!
+
 Connector/J については[5.1 Driver/Datasource Class Names, URL Syntax and Configuration Properties for Connector/J](http://dev.mysql.com/doc/connector-j/en/connector-j-reference-configuration-properties.html) を参照の上、logger オプションを指定すればよい。
+
+## Logger
+
+Logger は java.util.Logging と log4j と log4j2 と slf4j+logback という4つの派閥があって、非常にややこしい。
+
+が、結局のところ API とバックエンドの組み合わせの問題になっていて、それぞれがそれぞれのデータをバックエンドとして受け取れるみたいなことになってるので、とにかくいっぱい jar をググって出てきた通りにうけとってぶっこんでいけばいい。ということな気がしている。
 
 ## CLI
 
