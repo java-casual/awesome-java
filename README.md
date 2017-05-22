@@ -64,3 +64,4 @@ Logger は java.util.Logging と log4j と log4j2 と slf4j+logback という4�
 
  * [jpbetz/cli-util](https://github.com/jpbetz/cli-util)
   * サブコマンドが実行できるのが便利
+* [picocli](http://picocli.info) アノテーションに基づくコマンドドライン解釈。オプションとパラメーター両方、強い型付け。サブコマンド実行可能。使い方のヘルプはANSI色使用可能。ソースファイルが一つのため、依存関係を避けたい方はソースとしてインクルード可能。
